@@ -1,0 +1,137 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set a custom font for the entire page */
+  body {
+    font-family:Andale Mono ;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #111;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+  }
+  
+  /* Style the logo */
+  header h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  
+  /* Style the navigation menu */
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav li {
+    margin-left: 1rem;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  nav a:hover {
+    color: #a7c957;
+  }
+  
+  /* Style the main content section */
+  main {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem auto;
+    max-width: 1200px;
+  }
+  
+  /* Style the latest posts section */
+  section {
+    flex: 3;
+    margin-right: 2rem;
+  }
+  
+  section h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  
+  article {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  article h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  article p {
+    line-height: 1.5;
+  }
+  
+  article a {
+    color: #0d8727;
+    text-decoration: none;
+  }
+  
+  article a:hover {
+    color: #08481a;
+  }
+  
+  /* Style the about me section */
+  aside {
+    flex: 1;
+    background-color: #f2f2f2;
+    padding: 2rem;
+  }
+  
+  aside h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  aside p {
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #111;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 0.8rem;
+  }
+  
+  #postimg {
+    height: 150px;
+    width: auto;
+    border-radius: 5px;
+  }
+
+  #LatestPosts {
+    color: #ffffff;
+    background-color: #222020;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+  
+  }
+  
+  
