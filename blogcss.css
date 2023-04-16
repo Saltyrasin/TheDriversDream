@@ -1,139 +1,151 @@
-/* Body styles */
-body {
-  margin: 0;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333;
-  background-color: #f9f9f9;
-}
-
-/* Header styles */
-header {
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-header h1 {
-  margin: 0;
-  font-weight: 700;
-  font-size: 36px;
-  color: #333;
-}
-
-/* Navigation styles */
-nav ul {
+/* Reset default browser styles */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a custom font for the entire page */
+body {
+  font-family: "Andale Mono",arial ;
+  background-color: rgb(243, 243, 243);
+}
+
+/* Style the header */
+header {
+  background-color: #111;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+}
+
+/* Style the logo */
+header h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+/* Style the navigation menu */
+nav ul li {
+  border-right: 1px solid white;
+  padding: 0 10px;
+}
+
+nav ul li:last-child {
+  border-right: none;
+}
+nav ul {
   list-style: none;
+  display: flex;
 }
 
 nav li {
-  display: inline-block;
-  margin-right: 20px;
+  margin-left: 1rem;
 }
 
 nav a {
-  display: block;
-  padding: 10px;
-  color: #333;
+  color: #fff;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: all 0.2s ease-in-out;
 }
 
 nav a:hover {
-  color: #ff5a5f;
+  color: #a7c957;
 }
 
-/* Main styles */
+/* Style the main content section */
 main {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px;
   display: flex;
   justify-content: space-between;
+  margin: 2rem auto;
+  max-width: 1200px;
 }
 
-main section {
-  width: 75%;
+/* Style the latest posts section */
+section {
+  flex: 3;
+  margin-right: 2rem;
 }
 
-main section h2 {
-  margin-top: 0;
-  font-size: 24px;
-  color: #333;
+section h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
 }
 
-main article {
-  margin-bottom: 40px;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+article {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  overflow: hidden;
+  padding: 1rem;
 }
 
-main article h3 {
-  margin-top: 0;
-  font-weight: 700;
-  font-size: 24px;
-  color: #333;
+article h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
-main article p {
-  margin-top: 10px;
-  font-size: 16px;
-  color: #666;
+article p {
+  line-height: 1.5;
 }
 
-main article a {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 20px;
-  background-color: #ff5a5f;
-  color: #fff;
+article a {
+  color: #0d8727;
   text-decoration: none;
-  border-radius: 3px;
-  transition: background-color 0.3s ease;
 }
 
-main article a:hover {
-  background-color: #ff4247;
+article a:hover {
+  color: #08481a;
 }
 
-main aside {
-  width: 23%;
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+/* Style the about me section */
+aside {
+  flex: 1;
+  background-color: #f2f2f2;
+  padding: .5rem;
 }
 
-main aside h2 {
-  margin-top: 0;
-  font-size: 24px;
-  color: #333;
+aside h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
-main aside p {
-  margin-top: 10px;
-  font-size: 16px;
-  color: #666;
+aside p {
+  line-height: 1.5;
+  margin-bottom: 1rem;
 }
 
-/* Footer styles */
+/* Style the footer */
 footer {
-  background-color: #fff;
-  padding: 20px;
+  background-color: #111;
+  color: #ffffff;
+  padding: 1rem;
   text-align: center;
-  box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
 }
 
 footer p {
-  margin: 0;
-  font-size: 14px;
-  color: #999;
+  font-size: 0.8rem;
 }
 
+#postimg {
+  height: 150px;
+  width: auto;
+  border-radius: 5px;
+}
 
+#LatestPosts {
+  color: #ffffff;
+  background-color: #222020;
+  display: inline-block;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+
+}
   @media only screen and (max-width: 414px) {
     header h1 {
       font-size: 1.5rem;
