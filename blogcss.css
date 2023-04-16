@@ -141,7 +141,7 @@ footer p {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
 
 }
- @media only screen and (max-width: 480px) {
+ @media only screen and (max-width: 600px) {
   /* Style for screens up to 480px wide (iPhone) */
   header {
     flex-direction: column;
