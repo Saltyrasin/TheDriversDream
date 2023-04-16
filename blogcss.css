@@ -143,7 +143,7 @@ footer p {
 }
   @media only screen and (max-width: 480px) {
     header h1 {
-      font-size: 2.5rem;
+      font-size: 1.5rem;
     }
     
     nav ul {
@@ -152,7 +152,7 @@ footer p {
       }
       
       nav li {
-      margin-left: 0;
+      margin-left: -10px;
       margin-bottom: 0.5rem;
       }
     
