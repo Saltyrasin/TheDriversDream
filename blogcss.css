@@ -141,49 +141,27 @@ footer p {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
 
 }
-  @media only screen and (max-width: 480px) {
-    header h1 {
-      font-size: 1.5rem;
-    }
-    
-    nav ul {
-      flex-direction: column;
-      margin-top: 0.5rem;
-      }
-      
-      nav li {
-      margin-left: -10px;
-      margin-bottom: 0.5rem;
-      }
-    
-    main {
-      flex-direction: column;
-    }
-    
-    section {
-      margin-right: 0;
-      margin-bottom: 2
-    }
-    article {
-      margin-bottom: 2rem;
-      border-bottom: 0px;
-      
-    }
-    nav a {
-      text-decoration: none;
-      transition: all 0.2s ease-in-out;
-    }
-    nav ul li {
-      border-right: 0px solid rgb(0, 0, 0);
-      padding: 0 10px;
-    }
-  
-    nav ul li:last-child {
-      border-right: none;
-    }
-    section {
-      padding: 40px;
-      flex: 3;
-      margin-right: .5rem;
-    }
+ @media only screen and (max-width: 480px) {
+  /* Style for screens up to 480px wide (iPhone) */
+  header {
+    flex-direction: column;
+    align-items: center;
   }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    margin: 0.5rem 0;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  section {
+    margin-right: 0;
+  }
+}
