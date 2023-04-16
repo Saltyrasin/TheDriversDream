@@ -7,7 +7,7 @@
 
 /* Set a custom font for the entire page */
 body {
-  font-family:Andale Mono ;
+  font-family: "Andale Mono",arial ;
 }
 
 /* Style the header */
@@ -28,6 +28,14 @@ header h1 {
 }
 
 /* Style the navigation menu */
+nav ul li {
+  border-right: 1px solid white;
+  padding: 0 10px;
+}
+
+nav ul li:last-child {
+  border-right: none;
+}
 nav ul {
   list-style: none;
   display: flex;
@@ -94,7 +102,7 @@ article a:hover {
 aside {
   flex: 1;
   background-color: #f2f2f2;
-  padding: 2rem;
+  padding: .5rem;
 }
 
 aside h2 {
@@ -133,41 +141,49 @@ footer p {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
 
 }
-
-
-
-@media only screen and (max-width: 768px) {
-  /* Style the navigation menu for small screens */
-  nav {
-  flex-direction: column;
-  }
+  @media only screen and (max-width: 480px) {
+    header h1 {
+      font-size: 1.5rem;
+    }
+    
+    nav ul {
+      flex-direction: column;
+      margin-top: 0.5rem;
+      }
+      
+      nav li {
+      margin-left: 0;
+      margin-bottom: 0.5rem;
+      }
+    
+    main {
+      flex-direction: column;
+    }
+    
+    section {
+      margin-right: 0;
+      margin-bottom: 2
+    }
+    article {
+      margin-bottom: 2rem;
+      border-bottom: 0px;
+      
+    }
+    nav a {
+      text-decoration: none;
+      transition: all 0.2s ease-in-out;
+    }
+    nav ul li {
+      border-right: 0px solid rgb(0, 0, 0);
+      padding: 0 10px;
+    }
   
-  nav li {
-  margin: 0.5rem 0;
+    nav ul li:last-child {
+      border-right: none;
+    }
+    section {
+      padding: 40px;
+      flex: 3;
+      margin-right: .5rem;
+    }
   }
-  
-  /* Adjust the width of the main content section */
-  main {
-  flex-direction: column;
-  margin: 1rem auto;
-  }
-  
-  section {
-  margin-right: 0;
-  }
-  
-  /* Style the latest posts section for small screens */
-  section h2 {
-  font-size: 1.5rem;
-  }
-  
-  /* Style the about me section for small screens */
-  aside {
-  margin-top: 1rem;
-  }
-  
-  aside h2 {
-  font-size: 1.2rem;
-  }
-  }
-  
