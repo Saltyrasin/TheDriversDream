@@ -180,51 +180,53 @@ footer p {
   box-shadow: 0 0 20px rgba(101, 101, 101, 1); 
 
 }
-  @media only screen and (max-width: 600px) {
-    header h1 {
-      width: 100%;
-      font-size: auto;
-    }
-    
-    nav ul {
-      width: 100%;
-      flex-direction: column;
-      margin-top: 0.5rem;
-      }
-      
-      nav li {
-      margin-left: 0;
-      margin-bottom: 0.5rem;
-      }
-    
-    main {
-      flex-direction: column;
-    }
-    
-    section {
-      margin-right: 0;
-      margin-bottom: 2
-    }
-    article {
-      margin-bottom: 2rem;
-      border-bottom: 0px;
-      
-    }
-    nav a {
-      text-decoration: none;
-      transition: all 0.2s ease-in-out;
-    }
-    nav ul li {
-      border-right: 0px solid rgb(0, 0, 0);
-      padding: 0 10px;
-    }
-  
-    nav ul li:last-child {
-      border-right: none;
-    }
-    section {
-      padding: 40px;
-      flex: 3;
-      margin-right: .5rem;
-    }
+/* Add this media query for smaller screens */
+@media only screen and (max-width: 600px) {
+  /* Adjust the header width and padding */
+  header {
+    width: 100%;
+    padding: 10px; /* Adjust padding as needed */
   }
+  
+  /* Adjust the navigation menu for smaller screens */
+  nav ul {
+    width: 100%;
+    flex-direction: column;
+    margin-top: 0.5rem;
+  }
+  
+  nav li {
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Adjust the main content layout */
+  main {
+    flex-direction: column;
+  }
+  
+  section {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+  
+  article {
+    margin-bottom: 2rem;
+    border-bottom: 0px;
+  }
+  
+  /* Adjust navigation links */
+  nav a {
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  nav ul li {
+    border-right: 0px solid rgb(0, 0, 0);
+    padding: 0 10px;
+  }
+
+  nav ul li:last-child {
+    border-right: none;
+  }
+}
