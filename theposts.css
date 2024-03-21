@@ -127,4 +127,17 @@
       flex: 3;
       margin-right: .5rem;
     }
+      #BigImg {
+    height: auto;
+    width: auto;
+    max-width: calc(100vw);
+    padding: 25px;
+    display: block;
+    border-radius: 20px;
+    border-width: 10px;
+    border-color: #fff;
+    border-style: solid;
+    box-shadow: 0 0 300px rgba(0, 0, 0, 0.5);
+    margin: auto;
+  }
   }
