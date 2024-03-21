@@ -186,6 +186,7 @@ footer p {
     }
     
     nav ul {
+      width: 100%;
       flex-direction: column;
       margin-top: 0.5rem;
       }
