@@ -106,6 +106,7 @@
       margin-bottom: 2
     }
     article {
+      width: auto;
       margin-bottom: 2rem;
       border-bottom: 0px;
       
