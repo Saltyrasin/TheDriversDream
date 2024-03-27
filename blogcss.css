@@ -201,6 +201,7 @@ footer p {
   /* Adjust the main content layout */
   main {
     flex-direction: column;
+   margin-top: 20%;
   }
   
   section {
